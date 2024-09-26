@@ -29,6 +29,9 @@ npm install
 
 # Start the development server
 npm run dev
+
+# Start the development server for API, its viewed on http://localhost:3004/courses
+npm run start:db
 ```
 
 ## Technologies
