@@ -5,7 +5,6 @@ import { Progress } from "@/components/ui/progress";
 import { MdCheck } from "react-icons/md";
 
 import { useParams } from "next/navigation";
-import notification from "@/lib/utilities/notification";
 import TabNavigation from "@/components/course-details/TabNavigation";
 import { mockCourseData } from "@/lib/data/mockCourseData";
 import CourseHeader from "@/components/course-details/CourseHeader";
@@ -17,19 +16,10 @@ export default function CourseDetails() {
   const params = useParams();
   const id = params.id as string;
   const courseDetails = mockCourseData[id as keyof typeof mockCourseData];
-  const [isExpanded, setIsExpanded] = useState(false);
 
   if (!courseDetails) {
     return <div>Course not found</div>;
   }
-
-  const toggleReadMore = () => setIsExpanded(!isExpanded);
-  const maxLength = 15;
-  const content = courseDetails?.about || "";
-  const displayedContent = isExpanded
-    ? content
-    : content.split(" ").slice(0, maxLength).join(" ") +
-      (content.split(" ").length > maxLength ? "..." : "");
 
   return (
     <div className="flex flex-col lg:flex-row">
