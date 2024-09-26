@@ -24,7 +24,7 @@ const TabNavigation: React.FC<TabNavigationProps> = ({ courseDetails }) => {
 
   return (
     <div className="w-full mt-5">
-      <nav className="flex justify-start gap-[75px] border-b border-gray-200 ">
+      <nav className="flex justify-start flex-wrap gap-5 lg:gap-[75px] border-b border-gray-200 ">
         {tabs.map((tab) => (
           <button
             key={tab.id}
@@ -41,8 +41,8 @@ const TabNavigation: React.FC<TabNavigationProps> = ({ courseDetails }) => {
       </nav>
       <div className="mt-4">
         {activeTab === "description" && (
-          <div className="flex">
-          <div className="w-[65%] pr-12 text-[#949BA4] text-[17px]">
+          <div className="flex flex-col lg:flex-row">
+          <div className="w-full lg:w-[65%] lg:pr-12 text-[#949BA4] text-md lg:text-[17px]">
             <p className="">{courseDetails?.description1}</p>
             <p className="mt-4">{courseDetails?.description2}</p>
           </div>

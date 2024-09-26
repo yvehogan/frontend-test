@@ -6,7 +6,7 @@ const Review = () => {
   const maxRating = 5;
 
   return (
-    <div className="bg-white rounded-sm shadow-md p-6 w-full border-2 [#F2F2F2]">
+    <div className="bg-white rounded-sm shadow-md p-6 w-full border-2 [#F2F2F2] mt-5 lg:mt-0">
       <h3 className="text-xl font-semibold mb-2 text-textColor">Give this chapter a star</h3>
       <p className="text-textGray mb-4">
         (1 is disappointing, 5 is great)

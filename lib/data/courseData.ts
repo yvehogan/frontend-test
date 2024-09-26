@@ -1,4 +1,7 @@
 import { Detail } from "../types/details";
+import { MdCheck } from "react-icons/md";
+import { GoLock } from "react-icons/go";
+
 
 export const courseData: Detail[] = [
     {
@@ -62,3 +65,4 @@ export const courseData: Detail[] = [
       description2: 'Project management is so important to organizations and teams, but in order for it to be really effective, you need to make sure you are correctly mapping your project management methodology to your team type, project, organization and goals.'
     },
   ]
+

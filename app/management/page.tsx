@@ -1,6 +1,6 @@
 "use client"
 
-import { DataTableDemo } from '@/components/DataTableDemo';
+import { DataTable } from '@/components/tableData/DataTable';
 import React from 'react'
 import { RxSlash } from "react-icons/rx";
 
@@ -13,8 +13,8 @@ const Management = () => {
         <p className="text-[#111B2F] font-semibold text-lg">Management</p>
       </div>
 
-      <div className="bg-white rounded-lg shadow-md p-6">
-        <DataTableDemo />
+      <div className="bg-white rounded-lg shadow-md p-6 overflow-x-auto">
+        <DataTable />
       </div>
     </div>
   )

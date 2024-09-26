@@ -30,7 +30,7 @@ export default function RootLayout({
       <ToastContainer />
         <div className="flex h-screen">
           <SideMenu />
-          <main className="flex-1 overflow-auto pl-14 pr-6">
+          <main className="flex-1 overflow-auto pl-4 md:pl-14 pr-6">
             {children}
           </main>
         </div>
