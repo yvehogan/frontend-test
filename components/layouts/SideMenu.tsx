@@ -24,7 +24,7 @@ const SideMenu = () => {
     <nav className="w-20 h-screen bg-white border-r-2 border-[#F2F2F2]">
       <div className="flex flex-col items-center py-4">
         <Link href="/">
-        <Image src="images/logo.png" height={45} width={45} alt='logo' className='mt-6 mb-6' />
+        <Image src="/images/logo.png" height={45} width={45} alt='logo' className='mt-6 mb-6' />
         </Link>
         {menuItems.map((item, index) => (
           <button
